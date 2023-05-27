@@ -78,7 +78,7 @@ public class ReflectionTest
         String expected ="{\"age\": \"int\",\"money\": \"int\",\"isTrue\": \"bool\",\"zero\": \"Byte\"," +
                 "\"sale\": \"Short\",\"price\": \"Long\",\"temp\": \"Float\",\"discount\": \"Double\"," +
                 "\"word\": \"char\",\"file\": [{\"isDirectory\": \"boolean\",\"name\": \"String\"," +
-                "\"filePath\": \"Strng\",\"size\": \"long\"}]}";
+                "\"filePath\": \"String\",\"size\": \"long\"}]}";
         Assert.assertEquals(expected,outContent.toString().trim());
     }
 }
