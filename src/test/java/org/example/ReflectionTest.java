@@ -48,7 +48,6 @@ public class ReflectionTest
         String expected ="{\"age\": \"int\",\"money\": \"int\",\"children\" : " +
                 "[[[\"String\",\"...\"],\"...\"],\"...\"]}";
         Assert.assertEquals(expected,outContent.toString().trim());
-        //for testpipeline
     }
 
     @Test
