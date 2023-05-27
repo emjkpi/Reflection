@@ -10,8 +10,20 @@
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/GOGOGO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestAQAProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestAQAProject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.AppTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.AppTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/ArrayLast.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/ArrayLast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/CollectionLast.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/CollectionLast.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/ReflectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/ReflectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/RemouteFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/RemouteFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/TestSimpleInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/TestSimpleInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/WrappedAndSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/WrappedAndSimple.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework13/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework13/Month.java" afterDir="false" />

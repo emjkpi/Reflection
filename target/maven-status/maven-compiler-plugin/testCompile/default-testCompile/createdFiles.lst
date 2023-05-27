@@ -1,5 +1,7 @@
-org\example\AppTest.class
+org\example\WrappedAndSimple.class
 org\example\RemouteFile.class
 org\example\ArrayLast.class
+org\example\ReflectionTest.class
 org\example\BaseTest.class
+org\example\CollectionLast.class
 org\example\TestSimpleInt.class
