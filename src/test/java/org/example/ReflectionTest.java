@@ -1,8 +1,5 @@
 package org.example;
 
-import static org.junit.Assert.assertTrue;
-
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -51,6 +48,7 @@ public class ReflectionTest
         String expected ="{\"age\": \"int\",\"money\": \"int\",\"children\" : " +
                 "[[[\"String\",\"...\"],\"...\"],\"...\"]}";
         Assert.assertEquals(expected,outContent.toString().trim());
+        //for testpipeline
     }
 
     @Test
@@ -68,7 +66,8 @@ public class ReflectionTest
     {
         String[] test = {"org.example.CollectionLast"};
         Reflection.main(test);
-        String expected ="{\"age\": \"int\",\"money\": \"int\",\"grades\": [\"int\", \"...\"],\"temp\": [\"bool\", \"...\"]}";
+        String expected ="{\"age\": \"int\",\"money\": \"int\",\"grades\":" +
+                " [\"int\", \"...\"],\"temp\": [\"bool\", \"...\"]}";
         Assert.assertEquals(expected,outContent.toString().trim());
     }
 
