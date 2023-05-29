@@ -10,6 +10,8 @@
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/GOGOGO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" afterDir="false" />
@@ -48,6 +50,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.github/workflows/main.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/Reflection.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -64,6 +72,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "last_opened_file_path": "C:/github/java/testaqa",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
@@ -75,33 +84,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReflectionTest">
-    <configuration name="org.example.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.App" />
-      <module name="TestAQAProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="org.example.Reflection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Reflection" />
-      <module name="TestAQAProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReflectionTest.innerClass">
     <configuration name="ReflectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestAQAProject" />
       <extension name="coverage">
@@ -113,6 +96,38 @@
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectionTest.innerClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestAQAProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
+      <option name="METHOD_NAME" value="innerClass" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReflectionTest.innerClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestAQAProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
+      <option name="METHOD_NAME" value="innerClasses" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReflectionTest.innerClass" />
         <item itemvalue="JUnit.ReflectionTest" />
+        <item itemvalue="JUnit.ReflectionTest.innerClasses" />
         <item itemvalue="JUnit.ReflectionTest.wrappedAndSimple" />
         <item itemvalue="JUnit.ReflectionTest.shouldAnswerWithTrue" />
-        <item itemvalue="Application.org.example.Reflection" />
-        <item itemvalue="Application.org.example.App" />
       </list>
     </recent_temporary>
   </component>
@@ -180,5 +195,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Reflection.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Reflection.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

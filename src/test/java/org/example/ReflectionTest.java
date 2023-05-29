@@ -81,6 +81,16 @@ public class ReflectionTest
                 "\"filePath\": \"String\",\"size\": \"long\"}]}";
         Assert.assertEquals(expected,outContent.toString().trim());
     }
+
+    @Test
+    public void innerClass()
+    {
+        String[] test = {"org.example.InnerClass"};
+        Reflection.main(test);
+        String expected ="{\"Six\" : [{\"Five\" : [{\"Four\" : [{\"id\": \"int\",\"name\": \"String\"}]," +
+                "\"isTrue\": \"bool\"}],\"grades\": [\"int\", \"...\"]}]}";
+        Assert.assertEquals(expected,outContent.toString().trim());
+    }
 }
 
 class BaseTest {
@@ -125,4 +135,17 @@ class WrappedAndSimple{
     private Double discount;
     private Character word;
     private RemouteFile file;
+}
+
+class InnerClass{
+    private class Six {
+        Set<Integer> grades;
+        private class Five{
+            private Boolean isTrue;
+            private class Four {
+                int id;
+                String name;
+            }
+        }
+    }
 }

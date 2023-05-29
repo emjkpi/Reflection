@@ -23,7 +23,6 @@ public class Reflection {
     }
 
     public static String classReflection(Class clazz) {
-
         StringBuilder jsonBuilder = new StringBuilder();
         parameterizedFields(clazz, jsonBuilder);
 
@@ -34,6 +33,15 @@ public class Reflection {
     public static void parameterizedFields(Class clazz, StringBuilder jsonBuilder) {
         jsonBuilder.append("{");
         Field[] fields = clazz.getDeclaredFields();
+        Class[] innerClass = clazz.getDeclaredClasses();
+        for ( int k=0; k < innerClass.length; k++) {
+            jsonBuilder.append("\"").append(innerClass[k].getSimpleName()).append("\" : [");
+            parameterizedFields(innerClass[k],jsonBuilder);
+            if (k==innerClass.length-1 && fields.length==0)
+                jsonBuilder.append("]");
+            else
+                jsonBuilder.append("]").append(",");
+        }
 
         for (int i=0; i < fields.length; i++) {
             String fieldName = fields[i].getName();
