@@ -70,7 +70,13 @@ public class Reflection {
                         Type mapKeyType = typeArguments[0];
                         Type mapValueType = typeArguments[1];
                         jsonBuilder.append("\"").append(fieldName).append("\": [{");
-                        simpleFields(mapKeyType, jsonBuilder);
+                        if ((Class)mapKeyType instanceof Class && !isJDKOrPrimitive((Class) mapKeyType)){
+                            Class mapKeyClass = (Class)mapKeyType;
+                            jsonBuilder.append("\"").append(mapKeyClass.getSimpleName()).append("\"");
+                        }
+                        else {
+                            simpleFields(mapKeyType, jsonBuilder);
+                        }
                         jsonBuilder.append(": ");
                         simpleFields(mapValueType, jsonBuilder);
                         jsonBuilder.append("}, \"...\"]");
@@ -82,12 +88,24 @@ public class Reflection {
             } else if (fieldType.isArray()) {
                 String elementType = fieldType.getSimpleName();
                 int arrayDimension = getArrayDimension(fieldType);
+                String elementSimpleType = elementType.substring(0,elementType.length() -arrayDimension*2);
+                switch (elementSimpleType){
+                    case "Integer":
+                        elementSimpleType = "int";
+                        break;
+                    case "Character":
+                        elementSimpleType = "char";
+                        break;
+                    case "Boolean":
+                        elementSimpleType = "bool";
+                        break;
+                }
 
                 jsonBuilder.append("\"").append(fieldName).append("\" : ");
                 for (int j = 0; j < arrayDimension; j++) {
                     jsonBuilder.append("[");
                 }
-                jsonBuilder.append("\"").append(elementType.substring(0,elementType.length() - arrayDimension*2)).append("\",");
+                jsonBuilder.append("\"").append(elementSimpleType).append("\",");
                 for (int j = 0; j < arrayDimension; j++) {
                     jsonBuilder.append("\"...\"]");
                     if (j!= arrayDimension - 1)
@@ -106,7 +124,7 @@ public class Reflection {
 
                 continue;
 
-            } else if (fieldType instanceof Class && !isJDKOrPrimitive(fieldType)) {
+            } else if (fieldType instanceof Class) {
                 jsonBuilder.append("\"").append(fieldName).append("\": [");
                 simpleFields(fieldType, jsonBuilder);
                 jsonBuilder.append("]");

@@ -91,6 +91,16 @@ public class ReflectionTest
                 "\"isTrue\": \"bool\"}],\"grades\": [\"int\", \"...\"]}]}";
         Assert.assertEquals(expected,outContent.toString().trim());
     }
+
+    @Test
+    public void keyIsClass()
+    {
+        String[] test = {"org.example.KeyIsClass"};
+        Reflection.main(test);
+        String expected ="{\"age\" : [[[\"int\",\"...\"],\"...\"],\"...\"],\"grades\": [\"int\", \"...\"]," +
+                "\"keywords\": [{\"RemouteFile\": [\"int\", \"...\"]}, \"...\"],\"discount\": \"bool\"}";
+        Assert.assertEquals(expected,outContent.toString().trim());
+    }
 }
 
 class BaseTest {
@@ -148,4 +158,11 @@ class InnerClass{
             }
         }
     }
+}
+
+class KeyIsClass{
+    private Integer[][][] age;
+    Set<Integer> grades;
+    Map<RemouteFile,Set<Integer>> keywords;
+    Boolean discount;
 }

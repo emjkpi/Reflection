@@ -10,7 +10,13 @@
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/GOGOGO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestAQAProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestAQAProject-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Reflection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Reflection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.ReflectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.ReflectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.ReflectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.ReflectionTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework13/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework13/Month.java" afterDir="false" />
@@ -82,7 +88,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReflectionTest.innerClass">
+  <component name="RunManager" selected="JUnit.ReflectionTest.keyIsClass">
     <configuration name="ReflectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestAQAProject" />
       <extension name="coverage">
@@ -130,7 +136,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReflectionTest.shouldAnswerWithTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReflectionTest.keyIsClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestAQAProject" />
       <extension name="coverage">
         <pattern>
@@ -140,7 +146,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.ReflectionTest" />
-      <option name="METHOD_NAME" value="shouldAnswerWithTrue" />
+      <option name="METHOD_NAME" value="keyIsClass" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReflectionTest.innerClass" />
+        <item itemvalue="JUnit.ReflectionTest.keyIsClass" />
         <item itemvalue="JUnit.ReflectionTest" />
+        <item itemvalue="JUnit.ReflectionTest.innerClass" />
         <item itemvalue="JUnit.ReflectionTest.innerClasses" />
         <item itemvalue="JUnit.ReflectionTest.wrappedAndSimple" />
-        <item itemvalue="JUnit.ReflectionTest.shouldAnswerWithTrue" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +205,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Reflection.java</url>
-          <line>142</line>
+          <line>160</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
