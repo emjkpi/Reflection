@@ -1,7 +1,11 @@
+org\example\InnerClass.class
 org\example\WrappedAndSimple.class
+org\example\InnerClass$Six.class
 org\example\RemouteFile.class
 org\example\ArrayLast.class
+org\example\InnerClass$Six$Five.class
 org\example\ReflectionTest.class
+org\example\InnerClass$Six$Five$Four.class
 org\example\BaseTest.class
 org\example\CollectionLast.class
 org\example\TestSimpleInt.class
