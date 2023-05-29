@@ -1,4 +1,4 @@
-package org.example;
+package org.example.reflectionUtils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
@@ -7,20 +7,6 @@ import java.util.Collection;
 import java.util.Map;
 
 public class Reflection {
-
-    public static void main(String[] args) {
-        for (String arg : args) {
-            Class<?> classToConvert;
-            try {
-                classToConvert = Class.forName(arg);
-                String result = classReflection(classToConvert);
-                System.out.println(result);
-            }
-            catch (ClassNotFoundException e) {
-                System.out.println("Can't find class" + e.getMessage());
-            }
-        }
-    }
 
     public static String classReflection(Class clazz) {
         StringBuilder jsonBuilder = new StringBuilder();
