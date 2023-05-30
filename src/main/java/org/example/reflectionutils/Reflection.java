@@ -58,7 +58,8 @@ public class Reflection {
                         jsonBuilder.append("\"").append(fieldName).append("\": [{");
                         if ((Class)mapKeyType instanceof Class && !isJDKOrPrimitive((Class) mapKeyType)){
                             Class mapKeyClass = (Class)mapKeyType;
-                            jsonBuilder.append("\"").append(mapKeyClass.getSimpleName()).append("\"");
+                            jsonBuilder.append("\"");
+                            jsonBuilder.append(mapKeyClass.getSimpleName()).append("\"");
                         }
                         else {
                             simpleFields(mapKeyType, jsonBuilder);
@@ -74,7 +75,8 @@ public class Reflection {
             } else if (fieldType.isArray()) {
                 String elementType = fieldType.getSimpleName();
                 int arrayDimension = getArrayDimension(fieldType);
-                String elementSimpleType = elementType.substring(0,elementType.length() -arrayDimension*2);
+                String elementSimpleType;
+                elementSimpleType = elementType.substring(0,elementType.length() -arrayDimension*2);
                 switch (elementSimpleType){
                     case "Integer":
                         elementSimpleType = "int";
@@ -91,7 +93,8 @@ public class Reflection {
                 for (int j = 0; j < arrayDimension; j++) {
                     jsonBuilder.append("[");
                 }
-                jsonBuilder.append("\"").append(elementSimpleType).append("\",");
+                jsonBuilder.append("\"");
+                jsonBuilder.append(elementSimpleType).append("\",");
                 for (int j = 0; j < arrayDimension; j++) {
                     jsonBuilder.append("\"...\"]");
                     if (j!= arrayDimension - 1)

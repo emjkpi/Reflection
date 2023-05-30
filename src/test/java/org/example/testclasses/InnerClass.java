@@ -6,8 +6,10 @@ public class InnerClass{
     private class Six {
         Set<Integer> grades;
         private class Five{
+
             private Boolean isTrue;
             private class Four {
+
                 int id;
                 String name;
             }

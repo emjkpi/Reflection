@@ -30,7 +30,8 @@ public class ReflectionTest
     {
         String actual = Reflection.classReflection(BaseTest.class);
         String expected ="{\"result\": \"int\",\"error\": \"String\",\"keywords\": [{\"String\": [{\"isDirectory\": " +
-                "\"boolean\",\"name\": \"String\",\"filePath\": \"String\",\"size\": \"long\"}, \"...\"]}, \"...\"]}";
+                "\"boolean\",\"name\": \"String\"," +
+                "\"filePath\": \"String\",\"size\": \"long\"}, \"...\"]}, \"...\"]}";
         Assert.assertEquals(expected,actual);
     }
 
@@ -47,8 +48,10 @@ public class ReflectionTest
     public void wrappedAndSimple()
     {
         String actual = Reflection.classReflection(WrappedAndSimple.class);
-        String expected ="{\"age\": \"int\",\"money\": \"int\",\"isTrue\": \"bool\",\"zero\": \"Byte\"," +
-                "\"sale\": \"Short\",\"price\": \"Long\",\"temp\": \"Float\",\"discount\": \"Double\"," +
+        String expected ="{\"age\": \"int\",\"money\": \"int\"," +
+                "\"isTrue\": \"bool\",\"zero\": \"Byte\"," +
+                "\"sale\": \"Short\",\"price\": \"Long\"," +
+                "\"temp\": \"Float\",\"discount\": \"Double\"," +
                 "\"word\": \"char\",\"file\": [{\"isDirectory\": \"boolean\",\"name\": \"String\"," +
                 "\"filePath\": \"String\",\"size\": \"long\"}]}";
         Assert.assertEquals(expected,actual);
@@ -68,7 +71,8 @@ public class ReflectionTest
     {
         String actual = Reflection.classReflection(KeyIsClass.class);
         String expected ="{\"age\" : [[[\"int\",\"...\"],\"...\"],\"...\"],\"grades\": [\"int\", \"...\"]," +
-                "\"keywords\": [{\"RemouteFile\": [\"int\", \"...\"]}, \"...\"],\"discount\": \"bool\"}";
+                "\"keywords\": [{\"RemouteFile\": [\"int\", \"...\"]}, " +
+                "\"...\"],\"discount\": \"bool\"}";
         Assert.assertEquals(expected,actual);
     }
 }

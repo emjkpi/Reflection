@@ -6,5 +6,6 @@ import java.util.Set;
 public class BaseTest {
     private int result;
     private String error;
+
     private Map<String, Set<RemouteFile>> keywords;
 }
