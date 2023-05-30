@@ -44,9 +44,9 @@ public class Processor {
                 Type collectionElementType = typeArguments[0];
                 jsonBuilder.append("\"")
                         .append(fieldName)
-                        .append("\": [");
-                simpleFields(collectionElementType, jsonBuilder);
-                jsonBuilder.append(", \"...\"]");
+                        .append("\": [")
+                        .append(simpleFields(collectionElementType))
+                        .append(", \"...\"]");
                 if (i != fields.length - 1)
                     jsonBuilder.append(",");
 
@@ -80,11 +80,11 @@ public class Processor {
                             .append("\"");
                 }
                 else {
-                    simpleFields(mapKeyType, jsonBuilder);
+                    jsonBuilder.append(simpleFields(mapKeyType));
                 }
-                jsonBuilder.append(": ");
-                simpleFields(mapValueType, jsonBuilder);
-                jsonBuilder.append("}, \"...\"]");
+                jsonBuilder.append(": ")
+                        .append(simpleFields(mapValueType))
+                        .append("}, \"...\"]");
                 if (i != fields.length - 1)
                     jsonBuilder.append(",");
 

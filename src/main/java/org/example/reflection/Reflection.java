@@ -61,9 +61,9 @@ public class Reflection {
             } else if (fieldType instanceof Class) {
                 jsonBuilder.append("\"")
                         .append(fieldName)
-                        .append("\": [");
-                simpleFields(fieldType, jsonBuilder);
-                jsonBuilder.append("]");
+                        .append("\": [")
+                        .append(simpleFields(fieldType))
+                        .append("]");
                 if (i != fields.length - 1)
                     jsonBuilder.append(",");
 
@@ -81,7 +81,9 @@ public class Reflection {
         jsonBuilder.append("}");
     }
 
-    public static void simpleFields(Type type, StringBuilder jsonBuilder) {
+    public static StringBuilder simpleFields(Type type) {
+
+        StringBuilder jsonBuilder = new StringBuilder();
         if (type instanceof Class) {
             if(isJDKOrPrimitive((Class) type)){
                 jsonBuilder.append("\"")
@@ -96,7 +98,7 @@ public class Reflection {
             typeArguments = parameterizedType.getActualTypeArguments();
             jsonBuilder.append("[");
             for (int i = 0; i < typeArguments.length; i++) {
-                simpleFields(typeArguments[i], jsonBuilder);
+                jsonBuilder.append(simpleFields(typeArguments[i]));
             }
             jsonBuilder.append(", \"...\"]");
         } else {
@@ -104,6 +106,7 @@ public class Reflection {
                        .append(type.toString())
                        .append("\"");
         }
+        return jsonBuilder;
     }
 
 }
