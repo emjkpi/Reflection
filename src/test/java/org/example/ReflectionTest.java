@@ -43,7 +43,7 @@ public class ReflectionTest
     {
         String actual = Reflection.classReflection(CollectionLast.class);
         String expected ="{\"age\": \"int\",\"money\": \"int\",\"grades\":" +
-                " [\"int\", \"...\"],\"temp\": [\"bool\", \"...\"]}";
+                " [\"int\", \"...\"],\"temp\": [\"boolean\", \"...\"]}";
         Assert.assertEquals(expected,actual);
     }
 
@@ -52,7 +52,7 @@ public class ReflectionTest
     {
         String actual = Reflection.classReflection(WrappedAndSimple.class);
         String expected ="{\"age\": \"int\",\"money\": \"int\"," +
-                "\"isTrue\": \"bool\",\"zero\": \"Byte\"," +
+                "\"isTrue\": \"boolean\",\"zero\": \"Byte\"," +
                 "\"sale\": \"Short\",\"price\": \"Long\"," +
                 "\"temp\": \"Float\",\"discount\": \"Double\"," +
                 "\"word\": \"char\",\"file\": [{\"isDirectory\": \"boolean\"," +
@@ -67,7 +67,7 @@ public class ReflectionTest
         String actual = Reflection.classReflection(InnerClass.class);
         String expected ="{\"Six\" : [{\"Five\" : [{\"Four\" :" +
                 " [{\"id\": \"int\",\"name\": \"String\"}]," +
-                "\"isTrue\": \"bool\"}],\"grades\": [\"int\", \"...\"]}]}";
+                "\"isTrue\": \"boolean\"}],\"grades\": [\"int\", \"...\"]}]}";
         Assert.assertEquals(expected,actual);
     }
 
@@ -78,7 +78,7 @@ public class ReflectionTest
         String expected ="{\"age\" : [[[\"int\",\"...\"],\"...\"],\"...\"]," +
                 "\"grades\": [\"int\", \"...\"]," +
                 "\"keywords\": [{\"RemouteFile\": [\"int\", \"...\"]}, " +
-                "\"...\"],\"discount\": \"bool\"}";
+                "\"...\"],\"discount\": \"boolean\"}";
         Assert.assertEquals(expected,actual);
     }
 }

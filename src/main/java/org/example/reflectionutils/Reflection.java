@@ -93,7 +93,7 @@ public class Reflection {
                         elementSimpleType = "char";
                         break;
                     case "Boolean":
-                        elementSimpleType = "bool";
+                        elementSimpleType = "boolean";
                         break;
                 }
 
@@ -171,7 +171,7 @@ public class Reflection {
     private static String printJDK(Class clazz){
 
         if(clazz.getTypeName().equals("java.lang.Boolean"))
-            return "bool";
+            return "boolean";
         if(clazz.getTypeName().equals("java.lang.Character"))
             return "char";
         if(clazz.getTypeName().equals("java.lang.Integer"))
