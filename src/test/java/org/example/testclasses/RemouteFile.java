@@ -7,5 +7,6 @@ class RemouteFile {
     private String name;
 
     private String filePath;
+
     private long size = -1;
 }

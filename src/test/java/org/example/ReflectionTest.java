@@ -20,7 +20,8 @@ public class ReflectionTest
     public void arrayLast()
     {
         String actual = Reflection.classReflection(ArrayLast.class);
-        String expected ="{\"age\": \"int\",\"money\": \"int\",\"children\" : " +
+        String expected ="{\"age\": \"int\",\"money\": \"int\"," +
+                "\"children\" : " +
                 "[[[\"String\",\"...\"],\"...\"],\"...\"]}";
         Assert.assertEquals(expected,actual);
     }
@@ -29,9 +30,11 @@ public class ReflectionTest
     public void baseTest()
     {
         String actual = Reflection.classReflection(BaseTest.class);
-        String expected ="{\"result\": \"int\",\"error\": \"String\",\"keywords\": [{\"String\": [{\"isDirectory\": " +
+        String expected ="{\"result\": \"int\",\"error\": \"String\"," +
+                "\"keywords\": [{\"String\": [{\"isDirectory\": " +
                 "\"boolean\",\"name\": \"String\"," +
-                "\"filePath\": \"String\",\"size\": \"long\"}, \"...\"]}, \"...\"]}";
+                "\"filePath\": \"String\",\"size\": \"long\"}," +
+                " \"...\"]}, \"...\"]}";
         Assert.assertEquals(expected,actual);
     }
 
@@ -61,7 +64,8 @@ public class ReflectionTest
     public void innerClass()
     {
         String actual = Reflection.classReflection(InnerClass.class);
-        String expected ="{\"Six\" : [{\"Five\" : [{\"Four\" : [{\"id\": \"int\",\"name\": \"String\"}]," +
+        String expected ="{\"Six\" : [{\"Five\" : [{\"Four\" :" +
+                " [{\"id\": \"int\",\"name\": \"String\"}]," +
                 "\"isTrue\": \"bool\"}],\"grades\": [\"int\", \"...\"]}]}";
         Assert.assertEquals(expected,actual);
     }
@@ -70,7 +74,8 @@ public class ReflectionTest
     public void keyIsClass()
     {
         String actual = Reflection.classReflection(KeyIsClass.class);
-        String expected ="{\"age\" : [[[\"int\",\"...\"],\"...\"],\"...\"],\"grades\": [\"int\", \"...\"]," +
+        String expected ="{\"age\" : [[[\"int\",\"...\"],\"...\"],\"...\"]," +
+                "\"grades\": [\"int\", \"...\"]," +
                 "\"keywords\": [{\"RemouteFile\": [\"int\", \"...\"]}, " +
                 "\"...\"],\"discount\": \"bool\"}";
         Assert.assertEquals(expected,actual);

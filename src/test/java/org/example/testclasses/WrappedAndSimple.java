@@ -2,6 +2,7 @@ package org.example.testclasses;
 
 public class WrappedAndSimple{
     private int age;
+
     private Integer money;
 
     private Boolean isTrue;

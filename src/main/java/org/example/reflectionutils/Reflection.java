@@ -40,7 +40,8 @@ public class Reflection {
                     Type[] typeArguments = parameterizedType.getActualTypeArguments();
                     if (typeArguments.length == 1) {
                         Type collectionElementType = typeArguments[0];
-                        jsonBuilder.append("\"").append(fieldName).append("\": [");
+                        jsonBuilder.append("\"");
+                        jsonBuilder.append(fieldName).append("\": [");
                         simpleFields(collectionElementType, jsonBuilder);
                         jsonBuilder.append(", \"...\"]");
                         if (i != fields.length - 1)
@@ -55,7 +56,8 @@ public class Reflection {
                     if (typeArguments.length == 2) {
                         Type mapKeyType = typeArguments[0];
                         Type mapValueType = typeArguments[1];
-                        jsonBuilder.append("\"").append(fieldName).append("\": [{");
+                        jsonBuilder.append("\"");
+                        jsonBuilder.append(fieldName).append("\": [{");
                         if ((Class)mapKeyType instanceof Class && !isJDKOrPrimitive((Class) mapKeyType)){
                             Class mapKeyClass = (Class)mapKeyType;
                             jsonBuilder.append("\"");
@@ -107,7 +109,8 @@ public class Reflection {
 
             } else if (isJDKOrPrimitive(fieldType)) {
 
-                jsonBuilder.append("\"").append(fieldName).append("\": \"").append(printJDK(fieldType)).append("\"");
+                jsonBuilder.append("\"").append(fieldName)
+                        .append("\": \"").append(printJDK(fieldType)).append("\"");
                 if (i != fields.length - 1)
                     jsonBuilder.append(",");
 
@@ -123,7 +126,8 @@ public class Reflection {
                 continue;
             }
 
-            jsonBuilder.append("\"").append(fieldName).append("\": \"").append(fieldType.getSimpleName()).append("\"");
+            jsonBuilder.append("\"").append(fieldName)
+                    .append("\": \"").append(fieldType.getSimpleName()).append("\"");
             if (i != fields.length - 1)
                 jsonBuilder.append(",");
         }
@@ -133,13 +137,15 @@ public class Reflection {
     private static void simpleFields(Type type, StringBuilder jsonBuilder) {
         if (type instanceof Class) {
             if(isJDKOrPrimitive((Class) type)){
-                jsonBuilder.append("\"").append(printJDK((Class) type)).append("\"");
+                jsonBuilder.append("\"")
+                        .append(printJDK((Class) type)).append("\"");
             } else {
                 parameterizedFields((Class) type, jsonBuilder);
             }
         } else if (type instanceof ParameterizedType) {
             ParameterizedType parameterizedType = (ParameterizedType) type;
-            Type[] typeArguments = parameterizedType.getActualTypeArguments();
+            Type[] typeArguments;
+            typeArguments = parameterizedType.getActualTypeArguments();
             jsonBuilder.append("[");
             for (int i = 0; i < typeArguments.length; i++) {
                 simpleFields(typeArguments[i], jsonBuilder);
