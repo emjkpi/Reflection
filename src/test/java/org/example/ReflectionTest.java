@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.reflectionutils.Reflection;
+import org.example.reflection.Reflection;
 import org.example.testclasses.*;
 import org.junit.Assert;
 import org.junit.Test;

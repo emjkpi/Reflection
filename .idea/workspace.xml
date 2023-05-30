@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2509a403-94be-4fae-b3b8-50836d0f9794" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/processinfutils/Processing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/ReflectionUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/reflection/Reflection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +31,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.github/workflows/main.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/reflection/Reflection.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -62,6 +64,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.example" />
@@ -183,7 +188,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/reflection/Reflection.java</url>
           <line>11</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
