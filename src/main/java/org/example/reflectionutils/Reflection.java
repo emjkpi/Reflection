@@ -1,4 +1,4 @@
-package org.example.reflectionUtils;
+package org.example.reflectionutils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;

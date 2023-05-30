@@ -1,6 +1,4 @@
-package org.example.testClasses;
-
-import org.example.testClasses.RemouteFile;
+package org.example.testclasses;
 
 import java.util.Map;
 import java.util.Set;

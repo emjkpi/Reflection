@@ -1,4 +1,6 @@
-import static org.example.reflectionUtils.Reflection.classReflection;
+package main;
+
+import static org.example.reflectionutils.Reflection.classReflection;
 
 public class Main {
     public static void main(String[] args) {

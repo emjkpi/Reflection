@@ -1,4 +1,4 @@
-package org.example.testClasses;
+package org.example.testclasses;
 
 import java.util.List;
 import java.util.Set;

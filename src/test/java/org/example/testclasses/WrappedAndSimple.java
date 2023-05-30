@@ -1,4 +1,4 @@
-package org.example.testClasses;
+package org.example.testclasses;
 
 public class WrappedAndSimple{
     private int age;

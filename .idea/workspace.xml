@@ -5,60 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2509a403-94be-4fae-b3b8-50836d0f9794" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/ArrayLast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/CollectionLast.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/InnerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/KeyIsClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/RemouteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/TestSimpleInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/testClasses/WrappedAndSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../java/GOGOGO/GOGOGO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/reflectionUtils/Reflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/reflectionUtils/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/TestAQAProject-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/TestAQAProject-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.ReflectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.ReflectionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.ReflectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.ReflectionTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/ArrayLast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BaseTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/CollectionLast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/InnerClass$Six$Five$Four.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/InnerClass$Six$Five.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/InnerClass$Six.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/InnerClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/KeyIsClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/ReflectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/ReflectionTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/RemouteFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/TestSimpleInt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/WrappedAndSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/JavaApplication2/src/JavaApplication2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework11/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework13/Month.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework13/Month.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework16/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework16/Mail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework17/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework17/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework8/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework8/Task1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework8/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Homework8/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson13/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson13/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson20/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson20/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson20/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson20/Test2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson20/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson20/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson8/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson8/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson8/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson8/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson8/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/VideoCourse/src/Lesson8/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/lessons/lessons/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/lessons/lessons/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/testaqa/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/testaqa/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/testaqa/out/production/testaqa/Reflection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/testaqa/out/production/testaqa/RemouteFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/testaqa/out/production/testaqa/Test1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/testaqa/src/Reflection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/ArrayLast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/ArrayLast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/CollectionLast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/CollectionLast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/InnerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/InnerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/KeyIsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/KeyIsClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/RemouteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/RemouteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/TestSimpleInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/TestSimpleInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/testClasses/WrappedAndSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/testclasses/WrappedAndSimple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +36,18 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.github/workflows/main.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/reflectionUtils/Reflection.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/org/example/ReflectionTest.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2QMtFcxyvUu70l3VpIp9R1n4JrT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -98,8 +62,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/github/java/testaqa",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "last_opened_file_path": "C:/github/TestAQA",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -115,7 +79,7 @@
       <module name="TestAQAProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testClasses.*" />
+          <option name="PATTERN" value="org.example.testclasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,7 +94,7 @@
       <module name="TestAQAProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testClasses.*" />
+          <option name="PATTERN" value="org.example.testclasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,7 +110,7 @@
       <module name="TestAQAProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testClasses.*" />
+          <option name="PATTERN" value="org.example.testclasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,7 +126,7 @@
       <module name="TestAQAProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testClasses.*" />
+          <option name="PATTERN" value="org.example.testclasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,7 +142,7 @@
       <module name="TestAQAProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.testClasses.*" />
+          <option name="PATTERN" value="org.example.testclasses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -226,12 +190,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/reflectionUtils/Reflection.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java</url>
           <line>160</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/reflectionUtils/Reflection.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java</url>
           <line>11</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
