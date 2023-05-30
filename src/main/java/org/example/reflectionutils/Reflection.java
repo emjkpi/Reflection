@@ -39,7 +39,8 @@ public class Reflection {
                 if (fieldGenericType instanceof ParameterizedType) {
                     ParameterizedType parameterizedType =
                             (ParameterizedType) fieldGenericType;
-                    Type[] typeArguments = parameterizedType.getActualTypeArguments();
+                    Type[] typeArguments =
+                            parameterizedType.getActualTypeArguments();
                     if (typeArguments.length == 1) {
                         Type collectionElementType = typeArguments[0];
                         jsonBuilder.append("\"");
@@ -53,7 +54,8 @@ public class Reflection {
                 }
             } else if (Map.class.isAssignableFrom(fieldType)) {
                 if (fieldGenericType instanceof ParameterizedType) {
-                    ParameterizedType parameterizedType = (ParameterizedType) fieldGenericType;
+                    ParameterizedType parameterizedType =
+                            (ParameterizedType) fieldGenericType;
                     Type[] typeArguments =
                             parameterizedType.getActualTypeArguments();
                     if (typeArguments.length == 2) {

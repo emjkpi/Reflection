@@ -7,6 +7,13 @@
     <list default="true" id="2509a403-94be-4fae-b3b8-50836d0f9794" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/TestAQAProject-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.ReflectionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.ReflectionTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.ReflectionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/org.example.ReflectionTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/ReflectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/ReflectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/testClasses/InnerClass$Six$Five$Four.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/testClasses/InnerClass$Six$Five$Four.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/testClasses/InnerClass$Six$Five.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/testClasses/InnerClass$Six$Five.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,11 +187,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/reflectionutils/Reflection.java</url>
           <line>11</line>
