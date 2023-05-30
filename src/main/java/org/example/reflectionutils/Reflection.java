@@ -21,7 +21,8 @@ public class Reflection {
         Field[] fields = clazz.getDeclaredFields();
         Class[] innerClass = clazz.getDeclaredClasses();
         for ( int k=0; k < innerClass.length; k++) {
-            jsonBuilder.append("\"").append(innerClass[k].getSimpleName()).append("\" : [");
+            jsonBuilder.append("\"")
+                    .append(innerClass[k].getSimpleName()).append("\" : [");
             parameterizedFields(innerClass[k],jsonBuilder);
             if (k==innerClass.length-1 && fields.length==0)
                 jsonBuilder.append("]");
@@ -36,7 +37,8 @@ public class Reflection {
 
             if (Collection.class.isAssignableFrom(fieldType)) {
                 if (fieldGenericType instanceof ParameterizedType) {
-                    ParameterizedType parameterizedType = (ParameterizedType) fieldGenericType;
+                    ParameterizedType parameterizedType =
+                            (ParameterizedType) fieldGenericType;
                     Type[] typeArguments = parameterizedType.getActualTypeArguments();
                     if (typeArguments.length == 1) {
                         Type collectionElementType = typeArguments[0];
@@ -52,7 +54,8 @@ public class Reflection {
             } else if (Map.class.isAssignableFrom(fieldType)) {
                 if (fieldGenericType instanceof ParameterizedType) {
                     ParameterizedType parameterizedType = (ParameterizedType) fieldGenericType;
-                    Type[] typeArguments = parameterizedType.getActualTypeArguments();
+                    Type[] typeArguments =
+                            parameterizedType.getActualTypeArguments();
                     if (typeArguments.length == 2) {
                         Type mapKeyType = typeArguments[0];
                         Type mapValueType = typeArguments[1];
@@ -61,7 +64,8 @@ public class Reflection {
                         if ((Class)mapKeyType instanceof Class && !isJDKOrPrimitive((Class) mapKeyType)){
                             Class mapKeyClass = (Class)mapKeyType;
                             jsonBuilder.append("\"");
-                            jsonBuilder.append(mapKeyClass.getSimpleName()).append("\"");
+                            jsonBuilder.append(mapKeyClass.getSimpleName())
+                                    .append("\"");
                         }
                         else {
                             simpleFields(mapKeyType, jsonBuilder);
@@ -110,7 +114,8 @@ public class Reflection {
             } else if (isJDKOrPrimitive(fieldType)) {
 
                 jsonBuilder.append("\"").append(fieldName)
-                        .append("\": \"").append(printJDK(fieldType)).append("\"");
+                        .append("\": \"").append(printJDK(fieldType))
+                        .append("\"");
                 if (i != fields.length - 1)
                     jsonBuilder.append(",");
 
@@ -127,7 +132,8 @@ public class Reflection {
             }
 
             jsonBuilder.append("\"").append(fieldName)
-                    .append("\": \"").append(fieldType.getSimpleName()).append("\"");
+                    .append("\": \"").append(fieldType.getSimpleName())
+                    .append("\"");
             if (i != fields.length - 1)
                 jsonBuilder.append(",");
         }

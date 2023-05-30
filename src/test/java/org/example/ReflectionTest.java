@@ -55,7 +55,8 @@ public class ReflectionTest
                 "\"isTrue\": \"bool\",\"zero\": \"Byte\"," +
                 "\"sale\": \"Short\",\"price\": \"Long\"," +
                 "\"temp\": \"Float\",\"discount\": \"Double\"," +
-                "\"word\": \"char\",\"file\": [{\"isDirectory\": \"boolean\",\"name\": \"String\"," +
+                "\"word\": \"char\",\"file\": [{\"isDirectory\": \"boolean\"," +
+                "\"name\": \"String\"," +
                 "\"filePath\": \"String\",\"size\": \"long\"}]}";
         Assert.assertEquals(expected,actual);
     }
