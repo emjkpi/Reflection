@@ -7,7 +7,7 @@ import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.Map;
 
-import static org.example.processinfutils.Processing.*;
+import static org.example.classprocessor.Processor.*;
 import static org.example.utils.ReflectionUtils.*;
 
 public class Reflection {
@@ -24,7 +24,7 @@ public class Reflection {
         jsonBuilder.append("{");
         Field[] fields = clazz.getDeclaredFields();
 
-        processingInnerClass(clazz, jsonBuilder, fields);
+        jsonBuilder.append(processingInnerClass(clazz, fields));
 
         for (int i=0; i < fields.length; i++) {
             String fieldName = fields[i].getName();
@@ -32,12 +32,12 @@ public class Reflection {
             Type fieldGenericType = fields[i].getGenericType();
 
             if (Collection.class.isAssignableFrom(fieldType)) {
-                processingCollection(fieldGenericType, jsonBuilder, fieldName , fields, i);
+                jsonBuilder.append(processingCollection(fieldGenericType, fieldName , fields, i));
 
                 continue;
 
             } else if (Map.class.isAssignableFrom(fieldType)) {
-                processingMap(fieldGenericType, jsonBuilder, fieldName , fields, i);
+                jsonBuilder.append(processingMap(fieldGenericType, fieldName , fields, i));
 
                 continue;
 

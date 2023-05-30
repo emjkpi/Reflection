@@ -1,4 +1,4 @@
-package org.example.processinfutils;
+package org.example.classprocessor;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
@@ -9,12 +9,12 @@ import static org.example.reflection.Reflection.typeChecker;
 import static org.example.utils.ReflectionUtils.getArrayDimension;
 import static org.example.utils.ReflectionUtils.isJDKOrPrimitive;
 
-public class Processing {
+public class Processor {
 
-    public static void processingInnerClass(Class clazz,
-                                            StringBuilder jsonBuilder,
+    public static StringBuilder processingInnerClass(Class clazz,
                                             Field[] fields) {
 
+        StringBuilder jsonBuilder = new StringBuilder();
         Class[] innerClass = clazz.getDeclaredClasses();
         for ( int k=0; k < innerClass.length; k++) {
             jsonBuilder.append("\"")
@@ -27,13 +27,14 @@ public class Processing {
                 jsonBuilder.append("]")
                            .append(",");
         }
+        return jsonBuilder;
     }
 
-    public static void processingCollection(Type fieldGenericType,
-                                            StringBuilder jsonBuilder,
+    public static StringBuilder processingCollection(Type fieldGenericType,
                                             String fieldName ,
                                             Field[] fields, int i) {
 
+        StringBuilder jsonBuilder = new StringBuilder();
         if (fieldGenericType instanceof ParameterizedType) {
             ParameterizedType parameterizedType =
                     (ParameterizedType) fieldGenericType;
@@ -51,13 +52,14 @@ public class Processing {
 
             }
         }
+        return jsonBuilder;
     }
 
-    public static void processingMap(Type fieldGenericType,
-                                     StringBuilder jsonBuilder,
+    public static StringBuilder processingMap(Type fieldGenericType,
                                      String fieldName ,
                                      Field[] fields, int i) {
 
+        StringBuilder jsonBuilder = new StringBuilder();
         if (fieldGenericType instanceof ParameterizedType) {
             ParameterizedType parameterizedType =
                     (ParameterizedType) fieldGenericType;
@@ -88,6 +90,7 @@ public class Processing {
 
             }
         }
+        return jsonBuilder;
     }
 
     public static void processingArray(Class fieldType,
