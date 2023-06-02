@@ -67,8 +67,7 @@ public class Processor {
                 jsonBuilder.append("\"")
                         .append(fieldName)
                         .append("\": [{");
-                if (mapKeyType != null &&
-                        !isJDKOrPrimitive((Class<?>) mapKeyType)){
+                if (!isJDKOrPrimitive((Class<?>) mapKeyType)){
 
                     Class<?> mapKeyClass = (Class<?>)mapKeyType;
                     jsonBuilder.append("\"")
