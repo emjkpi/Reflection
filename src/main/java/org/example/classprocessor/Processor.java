@@ -11,11 +11,11 @@ import static org.example.utils.ReflectionUtils.isJDKOrPrimitive;
 
 public class Processor {
 
-    public static StringBuilder processingInnerClass(Class clazz,
+    public static StringBuilder processingInnerClass(Class<?> clazz,
                                             Field[] fields) {
 
         StringBuilder jsonBuilder = new StringBuilder();
-        Class[] innerClass = clazz.getDeclaredClasses();
+        Class<?>[] innerClass = clazz.getDeclaredClasses();
         for ( int k=0; k < innerClass.length; k++) {
             jsonBuilder.append("\"")
                        .append(innerClass[k].getSimpleName())

@@ -83,8 +83,8 @@ public class Reflection {
             Type[] typeArguments =
                     ((ParameterizedType) type).getActualTypeArguments();
             jsonBuilder.append("[");
-            for (int i = 0; i < typeArguments.length; i++) {
-                jsonBuilder.append(simpleFields(typeArguments[i]));
+            for (Type typeArgument : typeArguments) {
+                jsonBuilder.append(simpleFields(typeArgument));
             }
             jsonBuilder.append(", \"...\"]");
         } else {
