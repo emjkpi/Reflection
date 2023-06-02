@@ -12,7 +12,7 @@ import static org.example.utils.ReflectionUtils.*;
 
 public class Reflection {
 
-    public static String classReflection(Class clazz) {
+    public static String classReflection(Class<?> clazz) {
         StringBuilder jsonBuilder = new StringBuilder();
         typeChecker(clazz, jsonBuilder);
 
@@ -20,7 +20,7 @@ public class Reflection {
     }
 
 
-    public static void typeChecker (Class clazz, StringBuilder jsonBuilder) {
+    public static void typeChecker (Class<?> clazz, StringBuilder jsonBuilder) {
         jsonBuilder.append("{");
         Field[] fields = clazz.getDeclaredFields();
 
@@ -28,23 +28,20 @@ public class Reflection {
 
         for (int i=0; i < fields.length; i++) {
             String fieldName = fields[i].getName();
-            Class fieldType = fields[i].getType();
+            Class<?> fieldType = fields[i].getType();
             Type fieldGenericType = fields[i].getGenericType();
 
             if (Collection.class.isAssignableFrom(fieldType)) {
                 jsonBuilder.append(processingCollection(fieldGenericType, fieldName , fields, i));
 
-                continue;
 
             } else if (Map.class.isAssignableFrom(fieldType)) {
                 jsonBuilder.append(processingMap(fieldGenericType, fieldName , fields, i));
 
-                continue;
 
             } else if (fieldType.isArray()) {
                 processingArray(fieldType, jsonBuilder, fieldName , fields, i);
 
-                continue;
 
             } else if (isJDKOrPrimitive(fieldType)) {
 
@@ -56,8 +53,6 @@ public class Reflection {
                 if (i != fields.length - 1)
                     jsonBuilder.append(",");
 
-                continue;
-
             } else {
                 jsonBuilder.append("\"")
                         .append(fieldName)
@@ -67,7 +62,6 @@ public class Reflection {
                 if (i != fields.length - 1)
                     jsonBuilder.append(",");
 
-                continue;
             }
 
         }
@@ -78,12 +72,12 @@ public class Reflection {
 
         StringBuilder jsonBuilder = new StringBuilder();
         if (type instanceof Class) {
-            if(isJDKOrPrimitive((Class) type)){
+            if(isJDKOrPrimitive((Class<?>) type)){
                 jsonBuilder.append("\"")
-                        .append(printJDK((Class) type))
+                        .append(printJDK((Class<?>) type))
                         .append("\"");
             } else {
-                typeChecker((Class) type, jsonBuilder);
+                typeChecker((Class<?>) type, jsonBuilder);
             }
         } else if (type instanceof ParameterizedType) {
             Type[] typeArguments =

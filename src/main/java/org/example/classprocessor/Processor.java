@@ -67,10 +67,10 @@ public class Processor {
                 jsonBuilder.append("\"")
                         .append(fieldName)
                         .append("\": [{");
-                if ((Class)mapKeyType instanceof Class &&
-                        !isJDKOrPrimitive((Class) mapKeyType)){
+                if (mapKeyType != null &&
+                        !isJDKOrPrimitive((Class<?>) mapKeyType)){
 
-                    Class mapKeyClass = (Class)mapKeyType;
+                    Class<?> mapKeyClass = (Class<?>)mapKeyType;
                     jsonBuilder.append("\"")
                             .append(mapKeyClass.getSimpleName())
                             .append("\"");
@@ -89,33 +89,25 @@ public class Processor {
         return jsonBuilder;
     }
 
-    public static void processingArray(Class fieldType,
+    public static void processingArray(Class<?> fieldType,
                                        StringBuilder jsonBuilder,
                                        String fieldName ,
                                        Field[] fields, int i) {
 
-        String elementType = fieldType.getSimpleName();
+        String elementType = fieldType.getSimpleName().replaceAll("\\[]","");
         int arrayDimension = getArrayDimension(fieldType);
-        String elementSimpleType =
-                elementType.substring(0,elementType.length() -arrayDimension*2);
-        switch (elementSimpleType){
-            case "Integer":
-                elementSimpleType = "int";
-                break;
-            case "Character":
-                elementSimpleType = "char";
-                break;
-            case "Boolean":
-                elementSimpleType = "boolean";
-                break;
-        }
+        String elementSimpleType
+                = switch (elementType) {
+            case "Integer" -> "int";
+            case "Character" -> "char";
+            case "Boolean" -> "boolean";
+            default -> elementType;
+        };
 
         jsonBuilder.append("\"")
                 .append(fieldName)
                 .append("\" : ");
-        for (int j = 0; j < arrayDimension; j++) {
-            jsonBuilder.append("[");
-        }
+        jsonBuilder.append("[".repeat(arrayDimension));
         jsonBuilder.append("\"")
                 .append(elementSimpleType)
                 .append("\",");
