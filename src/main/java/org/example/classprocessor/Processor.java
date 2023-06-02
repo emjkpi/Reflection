@@ -36,10 +36,8 @@ public class Processor {
 
         StringBuilder jsonBuilder = new StringBuilder();
         if (fieldGenericType instanceof ParameterizedType) {
-            ParameterizedType parameterizedType =
-                    (ParameterizedType) fieldGenericType;
             Type[] typeArguments =
-                    parameterizedType.getActualTypeArguments();
+                    ((ParameterizedType)fieldGenericType).getActualTypeArguments();
             if (typeArguments.length == 1) {
                 Type collectionElementType = typeArguments[0];
                 jsonBuilder.append("\"")
@@ -61,10 +59,8 @@ public class Processor {
 
         StringBuilder jsonBuilder = new StringBuilder();
         if (fieldGenericType instanceof ParameterizedType) {
-            ParameterizedType parameterizedType =
-                    (ParameterizedType) fieldGenericType;
             Type[] typeArguments =
-                    parameterizedType.getActualTypeArguments();
+                    ((ParameterizedType)fieldGenericType).getActualTypeArguments();
             if (typeArguments.length == 2) {
                 Type mapKeyType = typeArguments[0];
                 Type mapValueType = typeArguments[1];
