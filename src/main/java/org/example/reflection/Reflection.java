@@ -58,7 +58,7 @@ public class Reflection {
 
                 continue;
 
-            } else if (fieldType instanceof Class) {
+            } else {
                 jsonBuilder.append("\"")
                         .append(fieldName)
                         .append("\": [")
@@ -70,13 +70,6 @@ public class Reflection {
                 continue;
             }
 
-            jsonBuilder.append("\"")
-                    .append(fieldName)
-                    .append("\": \"")
-                    .append(fieldType.getSimpleName())
-                    .append("\"");
-            if (i != fields.length - 1)
-                jsonBuilder.append(",");
         }
         jsonBuilder.append("}");
     }
@@ -93,9 +86,8 @@ public class Reflection {
                 typeChecker((Class) type, jsonBuilder);
             }
         } else if (type instanceof ParameterizedType) {
-            ParameterizedType parameterizedType = (ParameterizedType) type;
-            Type[] typeArguments;
-            typeArguments = parameterizedType.getActualTypeArguments();
+            Type[] typeArguments =
+                    ((ParameterizedType) type).getActualTypeArguments();
             jsonBuilder.append("[");
             for (int i = 0; i < typeArguments.length; i++) {
                 jsonBuilder.append(simpleFields(typeArguments[i]));
